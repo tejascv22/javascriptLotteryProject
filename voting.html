@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <title>votting</title>
+    <script>
+        function myfunction() {
+        if(document.getElementById("t1").value==document.getElementById("t2").value)
+        {document.getElementById("res").innerHTML="both are equal";
+        }
+        
+        else document.getElementById("res").innerHTML="both are not equal";
+        
+        }
+function my2function() {
+    var i,res='';
+    for(i=0;i<20;i++){
+        res+=i+'';
+       
+
+    }
+    document.getElementById("for").innerHTML = "the value of for loop is " + res;
+}
+    </script>
+    <body>
+        <h1>enter the value<input type="text" id="t1"><br></h1>
+        <h1>enter the value<input type="text" id="t2"><br></h1>
+        <button type="button" onclick="myfunction()">relate two numbers</button>
+        <h1 id="res">  </h1>
+        <h1 id="for"></h1>
+        <button type="button" onclick="my2function()">clickto forllop</button>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .skew-button {
+            padding: 12px 24px;
+            background-color: #1e272e;
+            color: white;
+            border: 1px solid #19af52;
+            position: relative;
+            overflow: hidden;
+            border-radius: 2px;
+            transition: all 0.4s;
+        }
+
+        .skew-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(198, 40, 40, 0.2);
+            background-color: #503db0;
+            transform: skewX(-30deg);
+
+            transition: all 0.5s;
+        }
+
+        .skew-button:hover::before {
+            left: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>adding of two numbers</h1>
+    <P id="tt">with the help of javascript</P>
+    <!-- <script> -->
+    <!-- window.alert("new"); -->
+    <!-- </script> -->
+    <script>
+        document.getElementById("tt").innerHTML = "this is additional text";
+    </script>
+    <script>
+        document.write(3 + 5);
+    </script>
+    <button type="button" onclick="myfunction()">click me</button>
+    <p id="now"></p>
+    <script>
+        function myfunction() {
+
+            document.getElementById("now").innerHTML = "this is a paragraph";
+        }
+    </script>
+    <button class="skew-button">hover me</button>
+
+
+</body>
+
+</html>
