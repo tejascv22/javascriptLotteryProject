@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i got gift</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+        }
+        img{
+            height: 400px;
+            width: 500px;
+        }
+        .continer{
+          
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .imaa{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+       .box{
+            width: 200px;
+            height: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(174, 170, 45);
+            margin: 10px;
+            text-align: center;
+            font-size: 25px;
+            flex-wrap: wrap;
+       }
+    #picknumber{
+           width: 150px;
+           height: 40px;
+           font-size: 20px;
+           margin: 10px;
+           background-color: rgb(120, 45, 174);
+           border-radius: 10px;
+           color: white;
+           cursor:  pointer;
+           align-items: center;
+       }
+       .winningbox{
+        background-color: green;
+        color: white;
+       }
+    </style>
+    <h1>lottery game</h1>
+    <div class="continer">
+    <div id="image" class="imaa">
+
+    </div>
+      
+       
+    <h2 id="result"></h2>
+        <button id="picknumber">pick a number</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
