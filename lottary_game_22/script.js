@@ -19,7 +19,6 @@ isProcessing = false;
     document.getElementById(resultgot).classList.add('winningbox')
 },2000)
 
-
 })
 
 const element=[100,400,600,300,900,410,50,55,60,90,84,75,95]
